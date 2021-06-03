@@ -1,3 +1,120 @@
-/* Global Entities */
+/* Global Rules */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #0071c5;
+  --transparent-color: rgb(15 116 143 / 70%);
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1270px;
+  }
+}
+/* End of global Rules */
+/* Variables */
 
-/* End of global Entities */
+/* End of Variables */
+/* Components */
+
+/* End Of Components */
+/* Navbar */
+
+.header {
+  height: 100vh;
+  position: relative;
+  background: url(../img/landing2.jpg);
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 30px 0;
+}
+.navbar .logo {
+  position: relative;
+
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 30px;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.navbar a.nav-item {
+  text-decoration: none;
+  padding-right: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: normal;
+  transition: 0.5s;
+}
+.navbar a.nav-item:hover {
+  color: #7fc6fc;
+}
+.navbar .nav-icons {
+  margin-left: 50px;
+}
+/* End Of Navbar */
+/* Landing section */
+.landing .text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  width: 50%;
+  color: white;
+  background-color: var(--transparent-color);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.landing .text p {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.landing .text .btn {
+  padding: 10px 20px;
+  border: 0;
+  background-color: wheat;
+  color: var(--primary-color);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+}
+/* End of landing Section */
