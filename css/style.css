@@ -73,8 +73,9 @@ html {
 }
 .navbar a.nav-item {
   text-decoration: none;
-  padding-right: 20px;
+  margin-right: 20px;
   text-transform: uppercase;
+  padding-bottom: 10px;
   text-align: center;
   font-size: 16px;
   color: var(--primary-color);
@@ -83,6 +84,7 @@ html {
 }
 .navbar a.nav-item:hover {
   color: #7fc6fc;
+  border-bottom: 1px solid #7fc6fc;
 }
 .navbar .nav-icons {
   margin-left: 50px;
@@ -118,3 +120,56 @@ html {
   border-radius: 10px;
 }
 /* End of landing Section */
+/* Start of Values Section */
+.values-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section-heading {
+  text-align: center;
+}
+.section-heading h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: var(--primary-color);
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+.values-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+
+.values-content .value-card {
+  padding: 10px;
+  transition: 0.5s;
+}
+/* .values-content .value-card:hover {
+  box-shadow: 1px 1px 1px 22px #777;
+} */
+
+.values-content .value-card img {
+  margin-bottom: 35px;
+}
+
+.values-content .value-card h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 35px;
+}
+.values-content .value-card p {
+  color: #777;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* End of Values Section */
