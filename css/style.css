@@ -13,6 +13,7 @@ html {
 :root {
   --primary-color: #0071c5;
   --secondary-color: #c75600;
+  --tertiary-color: #00c798;
   --transparent-color: rgb(15 116 143 / 70%);
 }
 .container {
@@ -225,6 +226,8 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex: 1;
+  padding: 20px 0;
 }
 
 .performer-card .performer-info .text {
@@ -235,9 +238,10 @@ html {
   padding: 0 20px;
 }
 .performer-card .performer-info img {
-  width: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  margin: 10px;
+
   padding: 5px;
   border: 1px solid var(--primary-color);
 }
