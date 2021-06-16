@@ -175,6 +175,31 @@ html {
 }
 
 /* End of Values Section */
+/* Start of Performance */
+#performance {
+  background-image: url(/img/pattern.jpg);
+}
+.performance-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.performance-section .charts-wrapper {
+  display: flex;
+  flex-direction: row;
+  row-gap: 50px;
+  padding: 0 50px 0 50px;
+  align-items: center;
+  justify-content: center;
+}
+.performance-section .chart_one,
+.performance-section .chart_two {
+  border-radius: 10px;
+  border: 1px solid #333;
+  padding: 20px;
+}
+/* End of Performance */
 /* Start of Top Performer section */
 #top-performers {
   background-image: url(/img/pattern.jpg);
@@ -443,3 +468,99 @@ html {
 }
 
 /* End of birthdays */
+/* Start of Gallup */
+.gallup-section {
+  background-image: url(/img/gallup.jpg);
+  height: 600px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gallup-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 70%);
+}
+.gallup-section .gallup-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  z-index: 5;
+}
+.gallup-section .gallup-content i {
+  font-size: 80px;
+  color: #eee;
+  padding: 25px 0;
+}
+.gallup-section .gallup-content p {
+  font-size: 36px;
+  font-weight: 800;
+  color: #999;
+  text-align: center;
+  padding: 50px 0;
+}
+.gallup-section .gallup-content .btn-eng {
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  border: 1px solid #333;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 25px;
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: 0.5s all;
+}
+.gallup-section .gallup-content .btn-eng a {
+  text-decoration: none;
+  color: white;
+}
+.gallup-section .gallup-content .btn-eng:hover {
+  background-color: var(--transparent-color);
+}
+/* End of Gallup  */
+
+/* News and Events section */
+.news-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End of New and events section */
+
+/* Footer Section */
+.footer-section {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+.footer-section .image {
+  padding: 20px 0;
+}
+.footer-section p {
+  font-size: 22px;
+  color: #eee;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* End of Footer Section */
