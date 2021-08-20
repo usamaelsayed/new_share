@@ -75,18 +75,18 @@ html {
 }
 .navbar a.nav-item {
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 40px;
   text-transform: uppercase;
   padding-bottom: 10px;
   text-align: center;
-  font-size: 16px;
+  font-size: 24px;
   color: var(--primary-color);
-  font-weight: normal;
+  font-weight: 600;
   transition: 0.5s;
 }
 .navbar a.nav-item:hover {
-  color: #7fc6fc;
-  border-bottom: 1px solid #7fc6fc;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
 }
 .navbar .nav-icons {
   margin-left: 50px;
@@ -177,7 +177,7 @@ html {
 /* End of Values Section */
 /* Start of Performance */
 #performance {
-  background-image: url(/img/pattern.jpg);
+  background-image: url(../img/pattern.jpg);
 }
 .performance-section {
   display: flex;
@@ -189,7 +189,7 @@ html {
   display: flex;
   flex-direction: row;
   row-gap: 50px;
-  padding: 0 50px 0 50px;
+  padding: 0 00px 0 00px;
   align-items: center;
   justify-content: center;
 }
@@ -197,17 +197,17 @@ html {
 .performance-section .chart_two {
   border-radius: 10px;
   border: 1px solid #333;
-  padding: 20px;
+  padding: 10px;
+  margin: 20px;
 }
 /* End of Performance */
 /* Start of Top Performer section */
 #top-performers {
-  background-image: url(/img/pattern.jpg);
+  background-image: url(../img/pattern.jpg);
 }
 .top-performers-section {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
   padding-bottom: 100px;
 }
 .top-performers-section .cards-wrapper {
@@ -234,7 +234,7 @@ html {
 }
 .top-performers-section .card-nav a:hover {
   color: white;
-  background-color: #7fc6fc;
+  background-color: var(--secondary-color);
 }
 
 .performer-card {
@@ -470,7 +470,7 @@ html {
 /* End of birthdays */
 /* Start of Gallup */
 .gallup-section {
-  background-image: url(/img/gallup.jpg);
+  background-image: url(../img/gallup.jpg);
   height: 600px;
   background-size: cover;
   background-attachment: fixed;
