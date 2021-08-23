@@ -61,7 +61,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
@@ -559,6 +559,53 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.news-wrapper .row {
+  display: flex;
+  width: 100%;
+}
+.row .col-8 {
+  width: 60%;
+}
+.row .col-4 {
+  width: 40%;
+}
+.row .news-card {
+  padding: 10px;
+  margin: 10px;
+}
+/* .row .lg-card {
+  height: 100%;
+} */
+.row .news-image img {
+  width: 100%;
+  filter: opacity(0.8);
+}
+.events-wrapper {
+  display: flex;
+}
+.events-wrapper .event {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+.events-wrapper .event i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: var(--primary-color);
+  padding: 20px;
+}
+.events-wrapper h3 {
+  color: var(--primary-color);
+}
+.events-wrapper p {
+  letter-spacing: 0px;
+  font-weight: lighter;
+  color: var(--secondary-color);
+  text-align: justify;
 }
 
 /* End of New and events section */
